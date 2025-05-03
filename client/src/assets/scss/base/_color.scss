@@ -1,0 +1,86 @@
+:root {
+    --secondary: #917f7f;
+    // --light: #f6f6f6;
+    --light: #f0f0f0;
+    --dark: #0c1e32;
+    --white: #fff;
+    --gray: #e4e4e4;
+    --smoke: #92a6bf;
+    --bg-color: #f5f5f5;
+    --text-color: #000;
+    --card: #fff;
+    --input: #fff;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1e2021;
+    --card: #181a1b;
+    --secondary: #555b5e;
+    --light: #27292a;
+    --dark: #0d1827;
+    --smoke: #6d6d6d;
+    --gray: #3e4244;
+    --text-color: #fff;
+    --input: #232323;
+    /*=============Boostrap==========*/
+    --bs-black-rgb: 255, 255, 255;
+    --bs-light-rgb: 39, 41, 42;
+    --bs-smoke-rgb: 109, 109, 109;
+}
+$gray-dark: #eff1f2;
+/*=========Theme Colors===========*/
+$bg-color: var(--bg-color);
+$card: var(--card);
+$text-color: var(--text-color);
+
+$shadow-line: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+$shadow-card:
+    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+$shadow-bottom:
+    rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+$shadow-dark:
+    rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+$shadow-dropdown:
+    rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+
+/*=========Custom Colors===========*/
+$white: #fff;
+$gray: #e4e4e4;
+$smoke: #f8f8f8;
+$dark-light: #666;
+$cloud: #f9fafc;
+/*=========Default Colors===========*/
+// $primary: #115eac;
+$primary: #115eac;
+// $primary: #8dad36;
+$secondary: #666;
+$success: #8dc63f;
+$danger: #ef4136;
+$warning: #efa536;
+$info: #115eac;
+$light: #f0f0f0;
+$dark: #212121;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+);
+$custom-colors: (
+    "white": $white,
+    "gray": $gray,
+    "smoke": $smoke,
+    "cloud": $cloud,
+    "dark-light": $dark-light,
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+/*======================*/

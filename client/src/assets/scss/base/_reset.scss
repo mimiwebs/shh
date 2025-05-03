@@ -1,0 +1,16 @@
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+button,
+.btn,
+input,
+textarea,
+.form-select {
+    &:focus {
+        outline: unset !important;
+        box-shadow: unset !important;
+    }
+}

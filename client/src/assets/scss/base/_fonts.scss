@@ -1,0 +1,41 @@
+/*
+    Poppins 
+    font-family: 'Poppins', sans-serif;
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap");
+/*
+    Outfit
+    font-family: 'Outfit', sans-serif;
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url("https://icon.amsprojects.dev/assets/css/icons.css");
+
+$poppins: "Poppins", sans-serif;
+$outfit: "Outfit", sans-serif;
+
+.poppins {
+    font-family: $poppins !important;
+}
+.outfit {
+    font-family: $outfit !important;
+}
+.fw-900 {
+    font-weight: 900 !important;
+}
+.fw-800 {
+    font-weight: 800 !important;
+}
+.fw-700 {
+    font-weight: 700 !important;
+}
+.fw-600 {
+    font-weight: 600 !important;
+}
+.fw-500 {
+    font-weight: 500 !important;
+}
+.fw-400 {
+    font-weight: 400 !important;
+}

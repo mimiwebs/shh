@@ -1,0 +1,41 @@
+/*
+    Usage:
+    @include for-size($size) {    
+      //code
+    }
+*/
+@mixin for-size($size) {
+    @if $size == phone {
+        @media (max-width: 576px) {
+            @content;
+        }
+    } @else if $size == tablet {
+        @media (max-width: 991px) {
+            @content;
+        }
+    } @else if $size == desktop-lg {
+        @media (max-width: 1024px) {
+            @content;
+        }
+    } @else if $size == desktop-zoom {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    } @else if $size == desktop-ratio {
+        @media (max-width: 1366px) {
+            @content;
+        }
+    } @else if $size == desktop-xl {
+        @media (max-width: 1440px) {
+            @content;
+        }
+    } @else if $size == desktop-media {
+        @media (max-width: 1728px) {
+            @content;
+        }
+    } @else if $size == desktop-xxl {
+        @media (max-width: 1920px) {
+            @content;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+/// Incrementally lighten a color in a more effective way than with lighten()
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - Percentage of white in the returned color
+/// @return {Color} - The lightened color
+@function lightColor($color, $percentage) {
+    @return mix(#fff, $color, $percentage);
+}
+
+/// Incrementally darken a color in a more effective way than with darken()
+/// @param {Color} $color - Color to shade
+/// @param {Number} $percentage - Percentage of black in the returned color
+/// @return {Color} - The darkened color
+@function darkColor($color, $percentage) {
+    @return mix(#000, $color, $percentage);
+}
+
+/// #{urlColor($fg-color)}
+
+@function urlColor($colour) {
+    @return "%23" + str-slice("#{$colour}", 2, -1);
+}
+
+@mixin threeDots($linesize) {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: $linesize;
+    -webkit-box-orient: vertical;
+}
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+    mega: 1920px,
+);

@@ -1,0 +1,38 @@
+{
+    "name": "demo-gossipy",
+    "version": "0.0.1",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Denizaslantatar/demoGossipy.git"
+    },
+    "author": "apsisxcoder & denizaslantatar",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Denizaslantatar/demoGossipy/issues"
+    },
+    "homepage": "https://github.com/Denizaslantatar/demoGossipy#readme",
+    "description": "",
+    "dependencies": {
+        "axios": "^1.7.7",
+        "bcryptjs": "^2.4.3",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2",
+        "express-rate-limit": "^7.4.0",
+        "helmet": "^7.1.0",
+        "jsonwebtoken": "^9.0.2",
+        "knex": "^3.1.0",
+        "openai": "^4.58.1",
+        "sqlite3": "^5.1.7",
+        "swagger-autogen": "^2.23.7",
+        "swagger-ui-express": "^5.0.1"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.4"
+    }
+}
